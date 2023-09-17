@@ -31,7 +31,7 @@ export default function StarlightIntegration(opts: StarlightUserConfig): AstroIn
 					entryPoint: '@astrojs/starlight/404.astro',
 				});
 				injectRoute({
-					pattern: '[...slug]',
+					pattern: 'docs/[...slug]',
 					entryPoint: '@astrojs/starlight/index.astro',
 				});
 				const newConfig: AstroUserConfig = {
